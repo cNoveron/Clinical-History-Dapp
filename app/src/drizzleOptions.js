@@ -4,7 +4,7 @@ import TeebNFT from "./contracts/TeebNFT.json";
 const options = {
   web3: {
     block: false,
-    customProvider: new Web3("ws://localhost:8545"),
+    customProvider: new Web3("ws://localhost:7545"),
   },
   contracts: [TeebNFT],
   events: {
