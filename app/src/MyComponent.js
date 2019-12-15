@@ -48,6 +48,11 @@ export default ({ accounts }) => (
         contract="TeebNFT"
         method="revokeAccessTo"
         labels={["_doctor", "idMF"]} />
+      <h3>addDoctorRole: </h3>
+      <ContractForm
+        contract="TeebNFT"
+        method="addDoctorRole"
+        labels={["medic"]} />
     </div>
     <div className="section">
       <h2>Teeb</h2>
