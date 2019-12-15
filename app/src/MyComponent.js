@@ -31,21 +31,23 @@ export default ({ accounts }) => (
       <h3>updateMedfileNFT: </h3>
       <ContractForm
         contract="TeebNFT"
-        method="updateMedfileNFT" />
+        method="updateMedfileNFT"
+        labels={["_doctor", "idMF"]} />
       <h3>NFTDescription: </h3>
       <ContractForm
         contract="TeebNFT"
-        method="NFTDescription" />
+        method="NFTDescription"
+        labels={["idMF"]} />
       <h3>grantAccessTo: </h3>
       <ContractForm
         contract="TeebNFT"
         method="grantAccessTo"
-        labels={["To Doctor", "Amount to Send"]} />
+        labels={["_doctor", "idMF"]} />
       <h3>revokeAccessTo: </h3>
       <ContractForm
         contract="TeebNFT"
         method="revokeAccessTo"
-        labels={["To Doctor", "Amount to Send"]} />
+        labels={["_doctor", "idMF"]} />
     </div>
     <div className="section">
       <h2>Teeb</h2>
