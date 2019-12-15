@@ -28,6 +28,11 @@ export default ({ accounts }) => (
         the <code>hideIndicator</code> prop because we know this variable is
         constant.
       </p>
+      <h3>newMedfileNFT: </h3>
+      <ContractForm
+        contract="TeebNFT"
+        method="newMedfileNFT"
+        labels={["nftOwner", "hashMF"]} />
       <h3>updateMedfileNFT: </h3>
       <ContractForm
         contract="TeebNFT"
