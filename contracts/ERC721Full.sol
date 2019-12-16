@@ -1,7 +1,7 @@
 pragma solidity ^0.5.0;
 
-import "./ERC721.sol";
-import "./ERC721Metadata.sol";
+import './ERC721.sol';
+import './ERC721Metadata.sol';
 
 /**
  * @title Full ERC721 Token
@@ -11,7 +11,10 @@ import "./ERC721Metadata.sol";
  * See https://eips.ethereum.org/EIPS/eip-721
  */
 contract ERC721Full is ERC721, ERC721Metadata {
-    constructor (string memory name, string memory symbol) public ERC721Metadata(name, symbol) {
-        // solhint-disable-previous-line no-empty-blocks
-    }
+  constructor(string memory name, string memory symbol)
+    public
+    ERC721Metadata(name, symbol)
+  {
+    // solhint-disable-previous-line no-empty-blocks
+  }
 }

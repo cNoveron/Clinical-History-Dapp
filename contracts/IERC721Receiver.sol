@@ -6,7 +6,7 @@ pragma solidity ^0.5.0;
  * from ERC721 asset contracts.
  */
 contract IERC721Receiver {
-    /**
+  /**
      * @notice Handle the receipt of an NFT
      * @dev The ERC721 smart contract calls this function on the recipient
      * after a {IERC721-safeTransferFrom}. This function MUST return the function selector,
@@ -20,6 +20,10 @@ contract IERC721Receiver {
      * @param data Additional data with no specified format
      * @return bytes4 `bytes4(keccak256("onERC721Received(address,address,uint256,bytes)"))`
      */
-    function onERC721Received(address operator, address from, uint256 tokenId, bytes memory data)
-    public returns (bytes4);
+  function onERC721Received(
+    address operator,
+    address from,
+    uint256 tokenId,
+    bytes memory data
+  ) public returns (bytes4);
 }
