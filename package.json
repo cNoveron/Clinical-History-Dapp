@@ -27,4 +27,10 @@
     "prettier": "^1.16.4",
     "prettier-plugin-solidity": "^1.0.0-alpha.22"
   },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true
+  }
 }
