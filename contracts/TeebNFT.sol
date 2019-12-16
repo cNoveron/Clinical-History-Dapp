@@ -54,12 +54,11 @@ contract TeebNFT is ERC721Full {
    * @return bool whether the new token is minted by given doctor
    */
   function newMedfileNFT(address nftOwner, bytes32 hashMF) public onlyDoctor returns (bool) {
-    uint idMF = total_mf;
-    Medfile storage exp = medfile[idMF];
+    Medfile storage storedMedfile = medfile[total_mf];
 
-    exp.approved_medics += 1;
-    exp.hash_medfile = hashMF;
-    _safeMint(nftOwner,idMF);
+    storedMedfile.approved_medics += 1;
+    storedMedfile.hash_medfile = hashMF;
+    _safeMint(nftOwner,total_mf);
     total_mf += 1;
 
     return true;
