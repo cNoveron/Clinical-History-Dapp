@@ -58,6 +58,11 @@ export default ({ accounts }) => (
         contract="TeebNFT"
         method="addDoctorRole"
         labels={["medic"]} />
+      <h3>removeDoctorRole: </h3>
+      <ContractForm
+        contract="TeebNFT"
+        method="removeDoctorRole"
+        labels={["medic"]} />
     </div>
     <div className="section">
       <h2>Teeb</h2>
