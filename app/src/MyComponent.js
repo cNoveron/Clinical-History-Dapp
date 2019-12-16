@@ -73,6 +73,16 @@ export default ({ accounts }) => (
         contract="TeebNFT"
         method="removeAdminRole"
         labels={["_admin"]} />
+      <h3>isAdmin: </h3>
+      <ContractForm
+        contract="TeebNFT"
+        method="isAdmin"
+        labels={["account"]} />
+      <h3>isDoctor: </h3>
+      <ContractForm
+        contract="TeebNFT"
+        method="isDoctor"
+        labels={["account"]} />
     </div>
     <div className="section">
       <h2>Teeb</h2>
